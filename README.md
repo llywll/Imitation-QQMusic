@@ -1,2 +1,2 @@
-# Imitation-QQMusic
-模仿QQ音乐
+# QQ音乐
+兴趣使然的仿制QQ音乐，仅做个人练手之作。
