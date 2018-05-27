@@ -1,0 +1,55 @@
+{
+    "songlist":[
+        {
+            "MusicName":"不要忘了我",
+            "singer":"雷佳音 / 佟丽娅",
+            "album":"不要忘了我",
+            "songTime":"04:38"
+        },{
+            "MusicName":"圆梦一代",
+            "singer":"王俊凯",
+            "album":"圆梦一代",
+            "songTime":"05:02"
+        },{
+            "MusicName":"The Way I AM",
+            "singer":"Charlie Puth",
+            "album":"The Way I AM",
+            "songTime":"03:06"
+        },{
+            "MusicName":"Real Rich (Explicit)",
+            "singer":"Wiz Khalifa / Gucci Mane",
+            "album":"Real Rich (Explicit)",
+            "songTime":"02:03"
+        },{
+            "MusicName":"莽荒",
+            "singer":"金志文",
+            "album":"莽荒",
+            "songTime":"03:56"
+        },{
+            "MusicName":"舞舞舞",
+            "singer":"萧亚轩",
+            "album":"舞舞舞",
+            "songTime":"04:00"
+        },{
+            "MusicName":"Arturo Sandoval",
+            "singer":"Arturo Sandoval / Pharrell Williams / Ariana Grande",
+            "album":"Arturo Sandoval",
+            "songTime":"03:31"
+        },{
+            "MusicName":"Youth",
+            "singer":"Shawn Mendes / Khalid",
+            "album":"youth",
+            "songTime":"03:09"
+        },{
+            "MusicName":"小屁孩儿 (Live)",
+            "singer":"王源 / 韩红",
+            "album":"我想和你唱第三季",
+            "songTime":"03:59"
+        },{
+            "MusicName":"You Can Cry",
+            "singer":"Marshmello / J",
+            "album":"You Can Cry",
+            "songTime":"03:14"
+        }
+    ]
+}

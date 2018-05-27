@@ -1,0 +1,82 @@
+{"playlist":[{
+    "imgpath" :"./../../static/img/302.jpg",
+    "href":"/songinfo",
+    "text":"从《犬之岛》看，韦斯·安德森的",
+    "other":"14.2万"
+},{
+    "imgpath" :"./../../static/img/301.jpg",
+    "href":"#",
+    "text":"汽 水 味 の V a p o w a v e",
+    "other":"5.2万"
+},{
+    
+    "imgpath" :"./../../static/img/303.jpg",
+    "href":"#",
+    "text":"乌衣巷口夕阳斜 | 古风街巷",
+    "other":"5.8万"
+},{
+    "imgpath" :"./../../static/img/300.jpg",
+    "href":"#",
+    "text":"每日新歌：宇多田光2018回归首单",
+    "other":"47.2万"
+},{
+    "imgpath" :"./../../static/img/304.jpg",
+    "href":"#",
+    "text":"迷幻后摇邂逅唯美女声",
+    "other":"25.2万" 
+},{
+    "imgpath" :"./../../static/img/304.jpg",
+    "href":"#",
+    "text":"迷幻后摇邂逅唯美女声",
+    "other":"25.2万"
+},{
+    
+    "imgpath" :"./../../static/img/303.jpg",
+    "href":"#",
+    "text":"乌衣巷口夕阳斜 | 古风街巷",
+    "other":"5.8万"
+},{
+
+    "imgpath" :"./../../static/img/302.jpg",
+    "href":"#",
+    "text":"从《犬之岛》看，韦斯·安德森的",
+    "other":"14.2万"
+},{
+
+    "imgpath" :"./../../static/img/301.jpg",
+    "href":"#",
+    "text":"汽 水 味 の V a p o w a v e",
+    "other":"5.2万"
+},{
+
+    "imgpath" :"./../../static/img/300.jpg",
+    "href":"#",
+    "text":"每日新歌：宇多田光2018回归首单",
+    "other":"47.2万"
+}],
+"tabitems":[{
+        "isaction":true,
+        "href":"#",
+        "text":"为你推荐"
+    },{
+        "isaction":false,
+        "href":"#",
+        "text":"经典国语"
+    },{
+        "isaction":false,
+        "href":"#",
+        "text":"情歌"
+    },{
+        "isaction":false,
+        "href":"#",
+        "text":"KTV热歌"
+    },{
+        "isaction":false,
+        "href":"#",
+        "text":"热门游戏"
+    },{
+        "isaction":false,
+        "href":"#",
+        "text":"粤语精选"
+    }]
+}

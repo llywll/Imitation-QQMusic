@@ -1,0 +1,127 @@
+{
+"tabitems":[{
+            "isaction":true,
+            "href":"#",
+            "text":"内地"
+        },{
+            "isaction":false,
+            "href":"#",
+            "text":"港台"
+        },{
+            "isaction":false,
+            "href":"#",
+            "text":"日本"
+        },{
+            "isaction":false,
+            "href":"#",
+            "text":"韩国"
+        },{
+            "isaction":false,
+            "href":"#",
+            "text":"欧美"
+        }],
+"newsonglist":[{
+            "imgpath" :"./../../static/img/302.jpg",
+            "href":"#",
+            "text":"染",
+            "other":"张碧晨"
+        },{
+            "imgpath" :"./../../static/img/301.jpg",
+            "href":"#",
+            "text":"1987我不知会遇见你",
+            "other":"李宇春"
+        },{
+            
+            "imgpath" :"./../../static/img/303.jpg",
+            "href":"#",
+            "text":"骄傲的选择《QQ飞车手游》",
+            "other":"张杰"
+        },{
+            "imgpath" :"./../../static/img/300.jpg",
+            "href":"#",
+            "text":"你快回来",
+            "other":"卓鸣"
+        },{
+            "imgpath" :"./../../static/img/304.jpg",
+            "href":"#",
+            "text":"没结果的结果",
+            "other":"孙露" 
+        },{
+            "imgpath" :"./../../static/img/304.jpg",
+            "href":"#",
+            "text":"哼",
+            "other":"冯提莫"
+        },{
+            
+            "imgpath" :"./../../static/img/303.jpg",
+            "href":"#",
+            "text":"周一的清晨还在下雨",
+            "other":"好妹妹"
+        },{
+
+            "imgpath" :"./../../static/img/302.jpg",
+            "href":"#",
+            "text":"Good-Bye Baby",
+            "other":"乐华娱乐歌手"
+        },{
+
+            "imgpath" :"./../../static/img/301.jpg",
+            "href":"#",
+            "text":"Lucky Rain",
+            "other":"袁娅维 / 王嘉尔"
+        },{
+
+            "imgpath" :"./../../static/img/300.jpg",
+            "href":"#",
+            "text":"阅读爱情",
+            "other":"胡夏"
+        },{
+
+            "imgpath" :"./../../static/img/300.jpg",
+            "href":"#",
+            "text":"Diamonds",
+            "other":"袁馨怡 / 严越 / 热伊娜"
+        },{
+
+            "imgpath" :"./../../static/img/300.jpg",
+            "href":"#",
+            "text":"回忆",
+            "other":"萌萌哒天团"
+        },{
+
+            "imgpath" :"./../../static/img/300.jpg",
+            "href":"#",
+            "text":"美丽的姑娘",
+            "other":"庞龙"
+        },{
+
+            "imgpath" :"./../../static/img/300.jpg",
+            "href":"#",
+            "text":"奇妙能力歌",
+            "other":"众星"
+        },{
+
+            "imgpath" :"./../../static/img/300.jpg",
+            "href":"#",
+            "text":"耳听爱情",
+            "other":"庄心妍"
+        },{
+
+            "imgpath" :"./../../static/img/300.jpg",
+            "href":"#",
+            "text":"第一次为爱疯狂",
+            "other":"魏巡"
+        },{
+
+            "imgpath" :"./../../static/img/300.jpg",
+            "href":"#",
+            "text":"乱了阵脚",
+            "other":"孙子涵"
+        },{
+
+            "imgpath" :"./../../static/img/300.jpg",
+            "href":"#",
+            "text":"布拉格广场",
+            "other":"群星"
+        }]
+}

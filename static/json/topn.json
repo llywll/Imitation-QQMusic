@@ -1,0 +1,105 @@
+{
+    "topn":[
+        {
+            "toptext":"流行指数",
+            "imgpath":"./../../static/img/303.jpg",
+            "song":[{
+                
+                "songname":"染",
+                "singer":"张碧晨"
+            },{
+                
+                "songname":"戒烟",
+                "singer":"李荣浩"
+            },{
+                
+                "songname":"后来",
+                "singer":"刘若英"
+            },{
+                
+                "songname":"耳听爱情",
+                "singer":"庄心妍"
+            }]
+        },{
+            "toptext":"热歌",
+            "imgpath":"./../../static/img/302.jpg",
+            "song":[{
+                
+                "songname":"纸短情长 (完整版)",
+                "singer":"烟把儿乐队"
+            },{
+                
+                "songname":"摩天大楼",
+                "singer":"薛之谦"
+            },{
+                
+                "songname":"不仅仅是喜欢",
+                "singer":"孙语赛/萧全"
+            },{
+                
+                "songname":"HandClap",
+                "singer":"Fitz & The Tantrums"
+            }]
+        },{
+            "toptext":"新歌",
+            "imgpath":"./../../static/img/301.jpg",
+            "song":[{
+                
+                "songname":"染",
+                "singer":"张碧晨"
+            },{
+                
+                "songname":"戒烟",
+                "singer":"李荣浩"
+            },{
+                
+                "songname":"后来",
+                "singer":"刘若英"
+            },{
+                
+                "songname":"耳听爱情",
+                "singer":"庄心妍"
+            }]
+        },{
+            "toptext":"欧美",
+            "imgpath":"./../../static/img/300.jpg",
+            "song":[{
+                
+                "songname":"染",
+                "singer":"张碧晨"
+            },{
+                
+                "songname":"戒烟",
+                "singer":"李荣浩"
+            },{
+                
+                "songname":"后来",
+                "singer":"刘若英"
+            },{
+                
+                "songname":"耳听爱情",
+                "singer":"庄心妍"
+            }]
+        },{
+            "toptext":"韩国",
+            "imgpath":"./../../static/img/304.jpg",
+            "song":[{
+                
+                "songname":"染",
+                "singer":"张碧晨"
+            },{
+                
+                "songname":"戒烟",
+                "singer":"李荣浩"
+            },{
+                
+                "songname":"后来",
+                "singer":"刘若英"
+            },{
+                
+                "songname":"耳听爱情",
+                "singer":"庄心妍"
+            }]
+        }
+    ]
+}

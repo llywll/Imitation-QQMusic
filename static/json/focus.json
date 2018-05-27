@@ -1,0 +1,24 @@
+{
+    "newsonglist":[{
+                "imgpath" :"./../../static/img/501.jpg",
+                "href":"#",
+                "text":"染",
+                "other":"张碧晨"
+            },{
+                "imgpath" :"./../../static/img/502.jpg",
+                "href":"#",
+                "text":"1987我不知会遇见你",
+                "other":"李宇春"
+            },{
+                
+                "imgpath" :"./../../static/img/503.jpg",
+                "href":"#",
+                "text":"骄傲的选择《QQ飞车手游》",
+                "other":"张杰"
+            },{
+                "imgpath" :"./../../static/img/504.jpg",
+                "href":"#",
+                "text":"你快回来",
+                "other":"卓鸣"
+            }]
+    }
