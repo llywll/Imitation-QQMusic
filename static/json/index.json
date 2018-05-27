@@ -1,56 +1,83 @@
-{"items" : [
-        {
-            "isaction":true,
-            "link":"/mainBody",
-            "text":"音乐馆"
-        },{
-            "isaction":false,
-            "link":"/myMusic",
-            "text":"我的音乐"
-        },{
-            "isaction":false,
-            "link":"#",
-            "text":"客户端"
-        },{
-            "isaction":false,
-            "link":"#",
-            "text":"音乐号"
-        },{
-            "isaction":false,
-            "link":"#",
-            "text":"VIP"
-        }],
-"items2":[{
-        "isaction":true,
-        "link":"/mainBody",
-        "text":"首页"
-    },{
-        "isaction":false,
-        "link":"#",
-        "text":"歌手"
-    },{
-        "isaction":false,
-        "link":"#",
-        "text":"专辑"
-    },{
-        "isaction":false,
-        "link":"#",
-        "text":"排行榜"
-    },{
-        "isaction":false,
-        "link":"#",
-        "text":"分类歌单"
-    },{
-        "isaction":false,
-        "link":"#",
-        "text":"电台"
-    },{
-        "isaction":false,
-        "link":"#",
-        "text":"MV"
-    },{
-        "isaction":false,
-        "link":"#",
-        "text":"数字专辑"
+{
+    "items": [{
+        "isaction": true,
+        "link": "/mainBody",
+        "text": "音乐馆"
+    }, {
+        "isaction": false,
+        "link": "/myMusic",
+        "text": "我的音乐"
+    }, {
+        "isaction": false,
+        "link": "#",
+        "text": "客户端"
+    }, {
+        "isaction": false,
+        "link": "#",
+        "text": "音乐号"
+    }, {
+        "isaction": false,
+        "link": "#",
+        "text": "VIP"
+    }],
+    "items2": [{
+        "isaction": true,
+        "link": "/mainBody",
+        "text": "首页"
+    }, {
+        "isaction": false,
+        "link": "#",
+        "text": "歌手"
+    }, {
+        "isaction": false,
+        "link": "#",
+        "text": "专辑"
+    }, {
+        "isaction": false,
+        "link": "#",
+        "text": "排行榜"
+    }, {
+        "isaction": false,
+        "link": "#",
+        "text": "分类歌单"
+    }, {
+        "isaction": false,
+        "link": "#",
+        "text": "电台"
+    }, {
+        "isaction": false,
+        "link": "#",
+        "text": "MV"
+    }, {
+        "isaction": false,
+        "link": "#",
+        "text": "数字专辑"
+    }],
+    "search_hot_list": [{
+        "link": "#",
+        "nubmer": 1,
+        "name": "病变",
+        "other": "136万"
+
+    }, {
+        "link": "#",
+        "nubmer": 2,
+        "name": "说散就散",
+        "other": "98.5万"
+    }, {
+        "link": "#",
+        "nubmer": 3,
+        "name": "空空如也",
+        "other": "51.3万"
+    }, {
+        "link": "#",
+        "nubmer": 4,
+        "name": "周杰伦  ",
+        "other": "42.7万"
+    }, {
+        "link": "#",
+        "nubmer": 5,
+        "name": "毛不易",
+        "other": "34.8万"
     }]
 }

@@ -23,15 +23,28 @@
             <!--顶部搜索区-->
             <div class="mod_top_search">
                 <div class="mod_search_input">
-                    <input type="text" placeholder="搜索音乐、MV、歌单、用户" class="search_input">
+                    <input type="text" placeholder="搜索音乐、MV、歌单、用户" class="search_input" @focus="showSearchBox()" @blur="HideSearchBox()">
                     <button class="search_input_btn">
                         <img class="icon_img" src="./../assets/icon/search_btn.png" />
                     </button>
                 </div>
             </div>
             <!--搜索框-->
-            <div>
-    
+            <div :class="isShow">
+                <div class="mod_search_other">
+                    <div class="search_hot">
+                        <dl class="search_hot_list">
+                            <dt class="search_hot_tit">热门搜索</dt>
+                            <dd>
+                                <a class="search_hot_link" v-for="(list,index) in search_hot_list" :key="index" :href="list.link">
+                                    <span class="search_text search_hot_number">{{ list.nubmer }}</span>
+                                    <span class="search_text search_hot_name">{{ list.name }}</span>
+                                    <span class="search_text search_hot_other">{{ list.other }}</span>
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
             </div>
             <!--用户信息-->
             <div class="mod_top_login">
@@ -51,8 +64,9 @@ export default {
      data(){
       return{
         items:[],
-        items2:[]
-
+        items2:[],
+        search_hot_list:[],
+        isShow:"js_smartbox drop"
       }
     },
     mounted(){
@@ -63,13 +77,21 @@ export default {
             this.$http.request('./..//static/json/index.json').then(response => {
                 this.items = response.data.items
                 this.items2=response.data.items2
+                this.search_hot_list=response.data.search_hot_list
             }, response => {
                 console.log(response)
             })
         },
         setAction(index){
             console.log(index)
+        },
+        showSearchBox(){
+            this.isShow="js_smartbox"
+        },
+        HideSearchBox(){
+            this.isShow="js_smartbox drop"
         }
+        
     }
 }
 </script>
@@ -200,6 +222,57 @@ export default {
 }
 
 
+.js_smartbox{
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius:2px; 
+    border-bottom-right-radius:2px; 
+    width: 210px;
+    height: 220px;
+    top:61px;
+    right: 284px;
+    z-index: 13;
+    overflow: hidden;
+    animation: show 0.1s linear;
+}
+
+.search_hot_list,.search_hot_list dd{
+    margin:5px 0;
+}
+.search_hot_tit{
+    display: none;
+}
+
+.search_hot_link{
+    display: inline-block;
+    padding-top:8px;
+    padding-bottom:8px;  
+    width: 100%;
+}
+.search_hot_link:hover{
+    background-color: #31C27C;
+}
+.search_hot_link:hover span{
+    color: white;
+}
+.search_hot_number{
+    padding:0px 8px; 
+    font-size: 14px;
+    color: #ff4222;
+}
+.search_hot_name{
+    font-size:15px; 
+    color: rgb(0, 0, 0);
+}
+.search_hot_other{
+    color: rgba(0, 0, 0, 0.767);
+    font-size:12px; 
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 2px 8px ;
+}
 /******************************************************/
 
 .mod_top_login{             /*右侧按钮组总div*/
@@ -243,6 +316,34 @@ export default {
 }
 .ktff_btn:hover{
     background-color: rgb(236, 236, 236);
+}
+
+
+
+
+/**************************/
+.drop{
+  animation: hide 0.1s 0.8s linear forwards;
+}
+@keyframes hide
+{
+    from {
+     opacity: 1;
+        }
+    to {  
+        height: 0;
+        opacity: 0;
+    }
+}
+@keyframes show
+{
+    from {
+        height: 0;
+        opacity: 0;
+        }
+    to {  
+     opacity: 1;
+    }
 }
 </style>
 
