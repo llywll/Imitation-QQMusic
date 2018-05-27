@@ -66,7 +66,7 @@ export default {
         items:[],
         items2:[],
         search_hot_list:[],
-        isShow:"js_smartbox drop"
+        isShow:"js_smartbox dropt"
       }
     },
     mounted(){
@@ -86,7 +86,7 @@ export default {
             console.log(index)
         },
         showSearchBox(){
-            this.isShow="js_smartbox"
+            this.isShow="js_smartbox show"
         },
         HideSearchBox(){
             this.isShow="js_smartbox drop"
@@ -234,7 +234,6 @@ export default {
     right: 284px;
     z-index: 13;
     overflow: hidden;
-    animation: show 0.1s linear;
 }
 
 .search_hot_list,.search_hot_list dd{
@@ -323,12 +322,21 @@ export default {
 
 /**************************/
 .drop{
-  animation: hide 0.1s 0.8s linear forwards;
+    animation: hide 0.2s 0.8s linear forwards;
+}
+.dropt{
+    
+        height: 0;
+        opacity: 0;
+}
+.show{
+    animation: show 0.1s linear forwards;
 }
 @keyframes hide
 {
     from {
      opacity: 1;
+     height: 220px;
         }
     to {  
         height: 0;
@@ -343,6 +351,7 @@ export default {
         }
     to {  
      opacity: 1;
+     height: 220px;
     }
 }
 </style>
