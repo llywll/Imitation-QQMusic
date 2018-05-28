@@ -111,7 +111,7 @@
 <style scoped>
 .mod_slide_box{
     position: relative;
-    background: linear-gradient(rgb(235, 235, 235),rgb(253, 253, 253));
+    background: linear-gradient(rgb(242, 242, 242),rgb(255, 255, 255));
 }
 .setion_inner{      /*轮播头部*/
     height: 460px;

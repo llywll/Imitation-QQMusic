@@ -49,11 +49,44 @@
             <!--用户信息-->
             <div class="mod_top_login">
                 <div class="login_btns">
-                    <a href="#" class="dl_btn">登录</a>
+                    <a href="#" class="dl_btn" @click="open_box()">登录</a>
                     <a href="#" class="ktlz_btn">开通绿钻豪华版</a>
                     <a href="#" class="ktff_btn">开通付费包</a>
                 </div>
             </div>
+      </div>
+      <div :class="popup">
+          <div class="login_box">
+              <div class="login_handoff">
+                  <a href="#" class="handoff_btn se_action">账号登录</a>
+                  <a href="#" class="handoff_btn">其他登陆</a>
+                  <a href="#" class="close_login_box" @click="close_box()">X</a>
+              </div>
+              <div class="login_bodyBox">
+                    <div class="login_info">
+                        <span class="info_tit h_tit">账号密码登陆</span>
+                        <span class="info_tit">推荐使用快速安全登录，防止盗号。</span>
+                    </div>
+                    <div class="info_from">
+                        <div :class="user_box">                            
+                            <input class="info_input" type="text" placeholder="账号登录" name="username" v-model="scan.user" ref="user" @focus="showBorder($event.currentTarget)" @blur="hideBorder($event.currentTarget)"/>
+                            <a class="clean_text" href="javascript:void(0);" :style="user_clear">X</a>
+                        </div>
+                        <div :class="pass_box">
+                            <input class="info_input" type="password"  placeholder="密码" name="password" v-model="scan.pass" ref="pass" @focus="showBorder($event.currentTarget)" @blur="hideBorder($event.currentTarget)" />
+                            <a class="clean_text" href="javascript:void(0);" :style="pass_clear">X</a>
+                        </div>
+                        <div class="input_btn">
+                            <button class="from_submit">登录</button>
+                        </div>
+                        <div class="input_other">
+                            <a class="a_link remember_btn">下次自动登录</a>
+                            <a href="#" class="a_link register_btn">注册新账号</a>
+                            <a href="#" class="a_link">意见反馈</a>
+                        </div>
+                    </div>
+              </div>
+          </div>
       </div>
   </div>
 </template>
@@ -66,12 +99,30 @@ export default {
         items:[],
         items2:[],
         search_hot_list:[],
-        isShow:"js_smartbox dropt"
+        isShow:"js_smartbox dropt",
+        user_box:"input_box",
+        pass_box:"input_box",
+        user_clear:"display:none",
+        pass_clear:"display:none",
+        popup:"mod_popup_mask off_box",
+        scan:{
+            user:"",
+            pass:""
+        }
       }
     },
     mounted(){
         this.getData();
     },
+    watch:{
+            scan:{
+                handler:function(val,oldval){
+                    this.user_clear=this.$refs.user.value==""?"display: none":"display: inline-block"
+                    this.pass_clear=this.$refs.pass.value==""?"display: none":"display: inline-block"
+                },
+                deep:true
+            }
+        },
     methods:{
         getData(){
             this.$http.request('./..//static/json/index.json').then(response => {
@@ -90,6 +141,24 @@ export default {
         },
         HideSearchBox(){
             this.isShow="js_smartbox drop"
+        },
+        showBorder(ele){
+            if(ele.name=="username")
+                    this.user_box="input_box input_focus"
+            else if(ele.name=="password")
+                    this.pass_box="input_box input_focus"
+        },
+        hideBorder(ele){
+            if(ele.name=="username")
+                    this.user_box="input_box"
+            else if(ele.name=="password")
+                    this.pass_box="input_box"
+        },
+        open_box(){
+            this.popup="mod_popup_mask open_box"
+        },
+        close_box(){
+            this.popup="mod_popup_mask off_box"
         }
         
     }
@@ -97,6 +166,141 @@ export default {
 </script>
 
 <style scoped>
+.mod_popup_mask{  /*登录遮罩层**/
+    position: fixed;
+    display:none;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.322);
+    z-index: 14;
+}
+.login_box{             /*登录框*/
+    position: relative;
+    width: 30vw;
+    background: white;
+    border-radius: 3px;
+    margin:0 auto;
+    margin-top: 15%;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.425);
+}
+.login_handoff{         /*登陆方式切换区*/
+    text-align: center;
+    border-bottom:1px solid rgba(0, 0, 0, 0.11); 
+}
+.se_action{
+    color: #31C27C;
+}
+
+.handoff_btn{       /*切换按钮*/
+    display: inline-block;
+    margin: 0 50px;
+    padding:15px 10px;
+}
+.handoff_btn:hover{
+    color: #31C27C;
+}
+.close_login_box{
+    display:inline-block;
+    position:absolute;
+    right:15px;
+    top:10px;
+}
+.open_box{
+    display:block;
+}
+.off_box{
+    display:none;
+}
+.close_login_box:hover{
+    color: #31C27C;
+}
+.info_tit{
+    text-align: center;
+    display: block;
+    color: rgba(0, 0, 0, 0.856);
+}
+.h_tit{
+    font-size: 22px;
+    padding: 15px 0;
+    color: black;
+}
+.input_box{    
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    width: 272px;
+    height: 38px;
+    margin: 16px auto;
+    padding: 0px 0px 0px 10px;
+    border-radius: 2px;
+
+}
+.info_from{
+    margin-top: 40px;
+}
+.info_input{
+    width: 272px;
+    height: 38px;
+    font-family: "苹方Regular";
+    font-size: 15px;
+    background: initial;
+    outline: none;
+    border:0;
+}
+.clean_text{
+    display:none;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    line-height: 42px;
+}
+.input_focus{
+    /*border: 1px solid rgb(160, 209, 255);*/
+    box-shadow: 0px 0px 0px 1px rgb(160, 209, 255);
+}
+.input_btn{
+    text-align: center;
+}
+.info_input:focus::-webkit-input-placeholder{
+    color: rgba(0, 0, 0, 0.24);    
+}
+.from_submit{
+    font-family: "苹方Regular";
+    width: 282px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    background: rgb(136,206,47);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom:40px;
+}
+
+.input_other{
+    overflow:hidden;
+    text-align: right;
+}
+.a_link{
+    display:inline-block;
+    margin:5px 2.5px;
+    padding:0px 2.5px; 
+    font-size:13px;
+}
+.a_link:hover{
+    text-decoration:underline;
+}
+.remember_btn{
+    position: absolute;
+    left:0;
+}
+.register_btn{
+    padding-right: 10px;
+    border-right:1px solid rgba(0, 0, 0, 0.274); 
+}
+/******/
     .mod_header{    /*头部最外层div*/
         position: relative;
         margin: auto;
@@ -325,7 +529,6 @@ export default {
     animation: hide 0.2s 0.8s linear forwards;
 }
 .dropt{
-    
         height: 0;
         opacity: 0;
 }
